@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+        <link href="https://yastatic.net/bootstrap/3.3.4/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <title>People</title>
+</head>
+
+<style rel="stylesheet">
+
+    div.square {
+        background-color: aliceblue;
+        width: 150px; height: 150px;
+
+        margin: 50px 100px;
+
+        padding-top: 64px;
+    }
+
+    div.row.people-content {
+        background-color: #c1c5bf;
+
+        text-align: center;
+        color: #b1c5ba;
+    }
+
+</style>
+
+<body>
+<div class="container">
+    <div class="row people-content">
+        <div class="col-md-4 square" data-bind="event: { click: setText }" data-spoller="Mike Jackson">1</div>
+        <div class="col-md-4 square" data-bind="event: { click: setText }" data-spoller="Kylie Minogue">2</div>
+        <div class="col-md-4 square" data-bind="event: { click: setText }" data-spoller="Max Payne">3</div>
+
+    </div>
+
+    <div class="row people-content">
+            <div class="col-md-4 square" data-bind="event: { click: setText }" data-spoller="Duck Duck">4</div>
+            <div class="col-md-4 square" data-bind="event: { click: setText }" data-spoller="Dog Dog">5</div>
+            <div class="col-md-4 square" data-bind="event: { click: setText }" data-spoller="Cat Cat">6</div>
+    </div>
+
+    <div class="row">
+
+        <div class="jumbotron" data-bind="text: textValue">
+            <h1>Hello, world!</h1>text1
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+<script src="core.js"></script>
+</body>
+</html>
